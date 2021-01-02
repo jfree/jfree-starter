@@ -9,7 +9,10 @@ public class App {
      * Creates a new instance of the most awesome app.
      */
     public App() {
-        System.out.println("Hello World!");
+    }
+    
+    void run() {
+        System.out.println("Hello World!");        
     }
 
     /**
@@ -19,6 +22,7 @@ public class App {
      */
     public static void main(String[] args) {
         App app = new App();
+        app.run();
         System.exit(0);
     }
     
