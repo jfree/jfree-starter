@@ -12,12 +12,12 @@
     <url>https://github.com/jfree/jfree-starter</url>
  
     <description>
-        A minimal Maven-driven Java project targetting Java 11 or later.  You can use this project as a starting point.
+        A minimal Maven-driven Java project targeting Java 21 or later.  You can use this project as a starting point.
     </description>
 
     <properties>
-        <project.source.level>11</project.source.level>
-        <project.target.level>11</project.target.level>
+        <project.source.level>21</project.source.level>
+        <project.target.level>21</project.target.level>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
  
@@ -25,20 +25,20 @@
         <dependency>
             <groupId>org.jfree</groupId>
             <artifactId>jfreechart</artifactId>
-            <version>1.5.2</version>
+            <version>1.5.6</version>
         </dependency>
         
         <!-- test dependencies -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.7.0</version>
+            <version>5.12.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.7.0</version>
+            <version>5.12.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -50,13 +50,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.4.1</version>
             </plugin>            
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.3.1</version>
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
@@ -65,7 +65,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.14.0</version>
                 <configuration>
                     <source>${project.source.level}</source>
                     <target>${project.target.level}</target>
@@ -79,7 +79,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.2</version>
+                <version>3.7.0</version>
                 <executions>
                     <execution>
                         <id>copy-dependencies</id>
@@ -94,7 +94,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.4.2</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -107,7 +107,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.11.2</version>
                 <configuration>
                     <linksource>true</linksource>
                 </configuration>
@@ -123,11 +123,11 @@
             
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.5.3</version>
             </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.5.3</version>
             </plugin>
         </plugins>
     </build>
